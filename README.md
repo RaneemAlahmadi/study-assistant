@@ -43,6 +43,7 @@ Tkinter (future version)
 No external Python packages are required.
 
 📁 Project Structure
+```text
 study-assistant/
 │
 ├── main.py
@@ -63,6 +64,8 @@ study-assistant/
 │
 └── tests/
     └── test_service.py
+```
+
 
 🚀 How to Run
 
