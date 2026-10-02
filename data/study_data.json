@@ -1,0 +1,24 @@
+{
+    "subjects": [
+        {
+            "id": "9b43823b-d52e-45de-8b1e-3377e663ef7f",
+            "name": "Mathematics",
+            "items": [
+                {
+                    "id": "23105b66-f998-4656-8797-971b4fc0e565",
+                    "title": "Chapter 1 Homework",
+                    "due_date": "2026-10-10",
+                    "item_type": "task",
+                    "completed": true
+                },
+                {
+                    "id": "814ffc32-c786-4cf2-b54a-c36f765131c7",
+                    "title": "final exam",
+                    "due_date": "2026-10-20",
+                    "item_type": "exam",
+                    "completed": false
+                }
+            ]
+        }
+    ]
+}
