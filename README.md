@@ -1,48 +1,56 @@
-📚 Study Assistant
+# Study Assistant
 
 A simple Python application for managing subjects, tasks, exams, deadlines, and study progress.
 
-✨ Features
+## Features
 
-📚 Add subjects
+- **Subject Management**
+  - Create subjects
+  - View subjects
+  - Delete subjects
 
-📝 Add tasks
+- **Task Management**
+  - Add tasks
+  - Set task deadlines
+  - Mark tasks as completed
+  - Delete tasks
 
-🧪 Add exams
+- **Exam Management**
+  - Add exams
+  - Set exam dates
+  - Mark exams as completed
+  - Delete exams
 
-📅 Set deadlines
+- **Deadline Tracking**
+  - Calculate the number of days remaining
+  - Show when an item is due today
+  - Show overdue items
 
-⏳ Calculate remaining days
+- **Progress Tracking**
+  - Calculate the overall completion percentage
 
-✅ Mark tasks and exams as completed
+- **JSON Data Storage**
+  - Save all study data locally
+  - Load saved data automatically
 
-📊 Calculate progress percentage
+- **Automated Testing**
+  - Test the application's core functionality using `unittest`
 
-🗑️ Delete tasks and exams
+- **Graphical Interface**
+  - Use a Tkinter interface to interact with the application
 
-🗑️ Delete subjects
+## Technologies
 
-💾 Store all data in JSON
-
-🧪 Unit tests
-
-🖥️ Ready for a future Tkinter GUI
-
-🛠️ Technologies
-
-Python 3
-
-JSON
-
-Dataclasses
-
-unittest
-
-Tkinter (future version)
+- **Python 3**
+- **Tkinter**
+- **JSON**
+- **Dataclasses**
+- **unittest**
 
 No external Python packages are required.
 
-📁 Project Structure
+## Project Structure
+
 ```text
 study-assistant/
 │
@@ -60,109 +68,136 @@ study-assistant/
 │   ├── models.py
 │   ├── storage.py
 │   ├── service.py
-│   └── cli.py
+│   ├── cli.py
+│   └── gui.py
 │
 └── tests/
     └── test_service.py
 ```
 
+## Getting Started
 
-🚀 How to Run
+### Requirements
 
-Make sure Python 3 is installed.
+- Python 3
+- Windows, macOS, or Linux
+
+No additional packages are required.
+
+### Running the Application
 
 Open a terminal inside the project folder and run:
 
+```bash
 py main.py
+```
 
+The Tkinter graphical interface will open automatically.
 
-The application will start in the terminal.
+## Running Tests
 
-🧪 Run Tests
+Run the automated tests with:
 
-To run the automated tests:
-
+```bash
 py -m unittest discover -s tests -v
+```
 
+The test suite covers functionality including:
 
-The tests check important features such as:
+- Adding subjects
+- Adding tasks
+- Adding exams
+- Completing items
+- Calculating progress
+- Deleting items
+- Saving data
+- Loading data
 
-Adding subjects
+## Progress Calculation
 
-Adding tasks
+The application calculates progress using:
 
-Adding exams
-
-Completing items
-
-Calculating progress
-
-Deleting items
-
-Saving and loading JSON data
-
-💾 Data Storage
-
-The application stores all study data locally in:
-
-data/study_data.json
-
-
-The data is automatically loaded when the application starts and saved whenever changes are made.
-
-📊 Progress Calculation
-
-Progress is calculated using:
-
-completed items / total items × 100
-
+```text
+Completed Items / Total Items × 100
+```
 
 For example:
 
-5 completed / 10 total = 50%
+```text
+Completed Items: 5
+Total Items: 10
 
-📅 Remaining Days
+Progress: 50%
+```
 
-The application automatically calculates the number of days remaining until each task or exam deadline.
+## Deadline Tracking
 
-Examples:
+The application calculates the remaining time for every task and exam.
 
+For example:
+
+```text
 10 days remaining
-
+```
 
 If the deadline is today:
 
+```text
 Due today
-
+```
 
 If the deadline has passed:
 
+```text
 3 days overdue
+```
 
-🔮 Future Improvements
+## Data Storage
 
-Possible future versions may include:
+All application data is stored locally in:
 
-🖥️ Tkinter graphical interface
+```text
+data/study_data.json
+```
 
-📅 Calendar view
+The application automatically loads existing data when it starts and saves changes when data is modified.
 
-🔎 Search and filtering
+## Command-Line Interface
 
-⭐ Priority levels
+The project also contains a command-line interface in:
 
-🔔 Notifications
+```text
+study_assistant/cli.py
+```
 
-🌙 Dark mode
+The CLI provides an alternative way to interact with the application without using the graphical interface.
 
-📈 Statistics and charts
+## Graphical Interface
 
-⏱️ Study sessions
+The graphical interface is implemented using Python's built-in Tkinter library.
 
-📤 Export/import data
+The GUI provides:
 
-📋 More advanced deadline management
+- Subject management
+- Task management
+- Exam management
+- Completion controls
+- Progress tracking
+- Deadline information
+- Data persistence
 
-📄 License
+## Future Improvements
+
+- Calendar view
+- Search and filtering
+- Priority levels
+- Notifications
+- Dark mode
+- Statistics and charts
+- Study sessions
+- Data export and import
+- Advanced deadline management
+
+## License
 
 This project is licensed under the MIT License.
